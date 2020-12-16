@@ -1,0 +1,17 @@
+.button-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    .button {
+        border-radius: 4px;
+        padding: 5px 25px;
+        font-size: 14px;
+        background-color: #B2D1E5;
+        border: none;
+        text-transform: uppercase;
+    }
+
+    .button:hover {
+        background-color: #E9F2F9;
+    }
+}

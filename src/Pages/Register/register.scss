@@ -1,0 +1,25 @@
+.register-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../../Assets/Img/Register.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    h4 {
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .form-input {
+        background-color: #3C8DC5;
+        padding: 15px 20px;
+        margin: auto;
+        border-radius: 10px;
+        width: 400px;
+        box-sizing: border-box;
+    }
+}
