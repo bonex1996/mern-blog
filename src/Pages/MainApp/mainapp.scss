@@ -3,7 +3,17 @@
     flex-direction: column;
     height: 100vh;
 
-    .content-wrapper {
+    .main-wrapper {
         flex: 1;
+        display: flex;
+
+        .content-wrapper {
+            flex: 1;
+        }
+
+        .aside-wrapper {
+            width: 20%;
+            background-color: beige;
+        }
     }
 }
