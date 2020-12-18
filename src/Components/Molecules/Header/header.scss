@@ -1,0 +1,13 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: skyblue;
+    box-sizing: border-box;
+
+    .brand-name {
+        font-size: 21px;
+        color: rgb(90, 58, 17);
+        cursor: pointer;
+    }
+}

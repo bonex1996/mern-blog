@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { MainApp, Login, Register } from '../../Pages'
+import { MainApp, Login, Register, Dashboard } from '../../Pages'
 
 const index = () => {
     return (
@@ -12,8 +12,11 @@ const index = () => {
                 <Route path="/login">
                     <Login />
                 </Route>
-                <Route path="/">
+                <Route path="/Home">
                     <MainApp />
+                </Route>
+                <Route path="/">
+                    <Dashboard />
                 </Route>
             </Switch>
         </Router>

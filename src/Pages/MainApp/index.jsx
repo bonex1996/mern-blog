@@ -1,20 +1,24 @@
-import React, { Fragment } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Home } from '..'
+import { Footer, Header } from '../../Components'
+import './mainapp.scss'
 
 const MainApp = () => {
     return (
-        <Fragment>
-            <p>Header</p>
-            <BrowserRouter>
-                <Switch>
-                    <Route path="/">
-                        <Home />
-                    </Route>
-                </Switch>
-            </BrowserRouter>
-            <p>Footer</p>
-        </Fragment>
+        <div className="main-app-wrapper">
+            <Header />
+            <div className="content-wrapper">
+                <Router>
+                    <Switch>
+                        <Route path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </Router>
+            </div>
+            <Footer />
+        </div>
     )
 }
 
