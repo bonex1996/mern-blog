@@ -2,12 +2,14 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
-    background-color: skyblue;
+    background-color: #1A2238;
+    color: whitesmoke;
     box-sizing: border-box;
 
     .brand-name {
         font-size: 21px;
-        color: rgb(90, 58, 17);
+        color: whitesmoke;
+        font-weight: 600;
         cursor: pointer;
     }
 }

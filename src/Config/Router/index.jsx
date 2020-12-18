@@ -12,11 +12,11 @@ const index = () => {
                 <Route path="/login">
                     <Login />
                 </Route>
-                <Route path="/Home">
-                    <MainApp />
+                <Route path="/dashboard">
+                    <Dashboard />
                 </Route>
                 <Route path="/">
-                    <Dashboard />
+                    <MainApp />
                 </Route>
             </Switch>
         </Router>
