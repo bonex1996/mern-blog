@@ -3,9 +3,9 @@ import './link.scss'
 
 const Link = ({ title, onClick }) => {
     return (
-        <div className="link">
-            <p onClick={onClick}>{title}</p>
-        </div>
+
+        <p className="link" onClick={onClick}>{title}</p>
+
     )
 }
 export default Link
