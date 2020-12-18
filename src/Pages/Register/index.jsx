@@ -1,8 +1,5 @@
 import React from 'react'
-import Button from '../../Components/Atoms/Button'
-import Ghap from '../../Components/Atoms/Ghap'
-import Input from '../../Components/Atoms/Input'
-import Link from '../../Components/Atoms/Link'
+import { Button, Input, Link, Ghap } from '../../Components/Atoms'
 import './register.scss'
 
 const index = () => {

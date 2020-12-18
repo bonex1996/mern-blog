@@ -1,6 +1,6 @@
-import input from './Input'
-import button from './Button'
-import ghap from './Ghap'
-import link from './Link'
+import Input from './Input'
+import Button from './Button'
+import Ghap from './Ghap'
+import Link from './Link'
 
-export { input, button, ghap, link }
+export { Input, Button, Ghap, Link }
