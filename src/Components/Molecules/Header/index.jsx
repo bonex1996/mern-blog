@@ -8,8 +8,10 @@ const Index = () => {
     return (
         <header className="header-wrapper">
             <div className="brand-name">Mern-Blog</div>
-            <div className="login-user">
-                <Link title="Logout" onClick={() => history.push('/login')} />
+            <div className="user">
+                <div className="logout">
+                    <Link title="sign out" onClick={() => history.push('/login')} />
+                </div>
             </div>
         </header>
     )
