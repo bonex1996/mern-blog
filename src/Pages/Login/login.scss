@@ -7,9 +7,11 @@
 
     .form-login {
         display: flex;
+        border-radius: 15px;
         width: 75%;
         height: 80%;
         font-family: 'Roboto Slab', serif;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, .50);
 
         .right-item {
             display: flex;
