@@ -7,14 +7,30 @@ const Index = () => {
     const history = useHistory();
     return (
         <div className="login-wrapper">
-            <div className="form-input">
-                <h4>Login</h4>
-                <Input label="Email" type="text" placeholder=" Your Email" />
-                <Ghap height={10} />
-                <Input label="Password" type="password" placeholder="Password" />
-                <Ghap height={15} />
-                <Button button="Login" onClick={() => history.push('/')} />
-                <p className="link-register">Belum Punya akun? <Link title="Register" onClick={() => history.push('/register')} /></p>
+            <div className="form-login">
+                <div className="left-item">
+                    <h4 className="tr">Login Blog</h4>
+                    <Ghap height={25} />
+                    <p className="ti">Silahkan Masukan Data</p>
+                    <Ghap height={5} />
+                    <div className="input-icon">
+                        <Input placeholder="Email" />
+                    </div>
+                    <Ghap height={5} />
+                    <div className="input-icon">
+                        <Input type="password" placeholder="Password" />
+                    </div>
+                    <Ghap height={25} />
+                    <Button title="sign in" onClick={() => history.push('/')} />
+                </div>
+                <div className="right-item">
+                    <h4 className="tr">Welcome!</h4>
+                    <Ghap height={15} />
+                    <p className="cr">if you not have account, please for register.</p>
+                    <Ghap height={50} />
+                    <Button title="sign up" onClick={() => history.push('/register')} />
+                </div>
+
             </div>
         </div>
     )

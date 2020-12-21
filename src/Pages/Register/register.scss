@@ -1,29 +1,86 @@
 .register-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
-    background-image: url(../../Assets/Img/Register.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
 
-    h4 {
-        text-align: center;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
-        margin: 10px 0;
-    }
+    .form-register {
+        display: flex;
+        width: 75%;
+        height: 80%;
+        font-family: 'Roboto Slab', serif;
 
-    .form-input {
-        background-color: #3C8DC5;
-        padding: 15px 20px;
-        margin: auto;
-        border-radius: 10px;
-        width: 35%;
-        box-sizing: border-box;
-    }
+        .left-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: linear-gradient(#3aada6, #3ab78f);
+            flex: 1;
+            border-radius: 15px 0 0 15px;
+            text-align: center;
+            padding: 0 15px;
+            box-sizing: border-box;
+            color: white;
 
-    .link-login {
-        text-align: center;
+            .tr {
+                font-size: 28px;
+                margin: 0;
+            }
+
+            .cr {
+                font-size: 14px;
+                margin: 0;
+            }
+
+            button {
+                background-color: rgba(0, 0, 0, 0);
+                border: 2px solid white;
+                color: white;
+                margin: 0 auto;
+                padding: 10px 40px;
+                border-radius: 15px;
+                font-weight: 600;
+            }
+        }
+
+        .right-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: auto;
+            text-align: center;
+            background-color: white;
+            width: 60%;
+            border-radius: 0 15px 15px 0;
+
+            .tr {
+                font-size: 28px;
+                color: #40ac9f;
+                margin: 0;
+            }
+
+            .ti {
+                margin: 0;
+                font-size: 14px;
+                color: #b6b6b6;
+            }
+
+            input {
+                width: 60%;
+                padding: 8px 10px;
+                border-radius: 8px;
+                background-color: #f4f8f7;
+            }
+
+            button {
+                background-color: #40ac9f;
+                color: white;
+                margin: 0 auto;
+                padding: 10px 40px;
+                border-radius: 15px;
+                font-weight: 600;
+            }
+        }
     }
 }

@@ -8,16 +8,32 @@ const Index = () => {
     const history = useHistory();
     return (
         <div className="register-wrapper">
-            <div className="form-input">
-                <h4>Register</h4>
-                <Input label="Full Name" type="text" placeholder="Your Full Name" />
-                <Ghap height={10} />
-                <Input label="Email" type="text" placeholder=" Your Email" />
-                <Ghap height={10} />
-                <Input label="Password" type="password" placeholder="Password" />
-                <Ghap height={15} />
-                <Button button="Register" onClick={() => history.push('/login')} />
-                <p className="link-login">Sudah punya akun? <Link title="Login" onClick={() => history.push('/login')} /></p>
+            <div className="form-register">
+                <div className="left-item">
+                    <h4 className="tr">Welcome Back!</h4>
+                    <Ghap height={15} />
+                    <p className="cr">if you have account, please for login.</p>
+                    <Ghap height={50} />
+                    <Button title="sign in" onClick={() => history.push('/login')} />
+                </div>
+                <div className="right-item">
+                    <h4 className="tr">Create Account</h4>
+                    <Ghap height={25} />
+                    <p className="ti">Silahkan Masukan Data</p>
+                    <div className="full-name">
+                        <Input placeholder="Full Name" />
+                    </div>
+                    <Ghap height={5} />
+                    <div className="email">
+                        <Input placeholder="Email" />
+                    </div>
+                    <Ghap height={5} />
+                    <div className="password">
+                        <Input type="password" placeholder="Password" />
+                    </div>
+                    <Ghap height={25} />
+                    <Button title="sign up" onClick={() => history.push('/login')} />
+                </div>
             </div>
         </div>
     )
