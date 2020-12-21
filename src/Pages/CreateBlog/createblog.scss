@@ -1,20 +1,41 @@
 .create-blog-wrapper {
+    display: flex;
+    flex-direction: column;
     padding: 20px 35px;
+    box-sizing: border-box;
+
+    .back {
+        display: flex;
+
+        button {
+            font-size: 20px;
+            width: 100px;
+            margin-left: auto;
+            background-color: #40ac9f;
+            color: white;
+        }
+    }
 
     .cbwp {
+        color: #40ac9f;
         font-size: 20px;
         font-weight: bold;
     }
 
     button {
-        width: 200px;
-        background-color: #394F8A;
-        color: white;
+        text-align: center;
+        width: 150px;
+        color: #40ac9f;
+        border: 1px solid #40ac9f;
+        background-color: white;
+        font-weight: 700;
+        border-radius: 10px;
         cursor: pointer;
         margin-left: auto;
     }
 
     button:hover {
-        background-color: #4A5FC1;
+        background-color: #40ac9f;
+        color: white;
     }
 }
