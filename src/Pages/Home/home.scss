@@ -1,6 +1,33 @@
 .home-page-wrapper {
-    padding: 20px 20px;
+    padding: 0 20px;
     box-sizing: border-box;
+
+    .seacrh {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        input {
+            border-radius: 10px 0 0 10px;
+            padding: 10px 15px;
+            width: 300px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #40ac9f;
+            font-size: 14px;
+            color: white;
+            padding: 0 20px;
+            box-sizing: border-box;
+            border-radius: 0 10px 10px 0;
+            height: 37px;
+            margin-top: 5px;
+        }
+    }
 
     .content-wrapper {
         display: flex;
@@ -11,15 +38,13 @@
     .pagination {
         display: flex;
         justify-content: center;
-    }
 
-    .pagination button {
-        width: 100px;
-        box-sizing: border-box;
-    }
-
-    .pagination button:hover {
-        border: 1px solid black;
+        button {
+            background-color: #40ac9f;
+            color: white;
+            width: 100px;
+            box-sizing: border-box;
+        }
     }
 
 

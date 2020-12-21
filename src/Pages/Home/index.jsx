@@ -1,23 +1,30 @@
 import React from 'react'
-import { Blogitem, Button, Ghap } from '../../Components'
+import { Blogitem, Button, Ghap, Input } from '../../Components'
 import './home.scss'
 
 const index = () => {
     return (
         <div className="home-page-wrapper">
+            <Ghap height={5} />
+            <div className="seacrh">
+                <Input placeholder="Masukan Pencarian ...." />
+                <Button title={<i className=" fas fa-search"></i>} />
+            </div>
+            <Ghap height={15} />
             <div className="content-wrapper">
                 <Blogitem />
                 <Blogitem />
                 <Blogitem />
                 <Blogitem />
             </div>
-            <Ghap height={15} />
+            <Ghap height={5} />
             <div className="pagination">
-                <Button button="Previous" />
-                <Ghap width={10} />
-                <Button button="Next" />
+                <Button title="Previous" />
+                <Ghap width={20} />
+                <Button title="Next" />
             </div>
-        </div>
+            <Ghap height={15} />
+        </div >
     )
 }
 
