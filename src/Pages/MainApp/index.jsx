@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Home } from '..'
-import { Footer, Header } from '../../Components'
+import { Footer, Header, Aside } from '../../Components'
 import CreateBlog from '../CreateBlog'
 import Detail from '../Detail'
 import './mainapp.scss'
@@ -27,12 +27,7 @@ const MainApp = () => {
                     </Router>
                 </div>
                 <div className="aside-wrapper">
-                    <ul>
-                        <li><a href="">link 1</a></li>
-                        <li><a href="">link 2</a></li>
-                        <li><a href="">link 3</a></li>
-                        <li><a href="">link 4</a></li>
-                    </ul>
+                    <Aside />
                 </div>
             </div>
             <Footer />

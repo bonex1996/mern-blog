@@ -1,0 +1,91 @@
+.dashboard-wrapper {
+    height: 100vh;
+
+    .dash-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5%;
+
+        .brand-name {
+            font-size: 26px;
+            color: darkcyan;
+            font-weight: 700;
+        }
+
+        .dash-login {
+
+            .link {
+                background-color: #3aada6;
+                color: whitesmoke;
+                font-size: 16px;
+                text-decoration: none;
+                border: 1px solid white;
+                border-radius: 15px;
+                padding: 5px 20px;
+            }
+        }
+    }
+
+    .dash-body {
+        display: flex;
+        overflow: hidden;
+        padding-left: 50px;
+
+        .left-body {
+            flex: 1;
+            color: #3ab78f;
+
+            .dash-body-title {
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .dash-body-content {
+                font-size: 18px;
+            }
+
+            button {
+                background-color: white;
+                border: 1px solid #3ab78f;
+                color: #3ab78f;
+                padding: 10px 15px;
+                border-radius: 10px;
+            }
+
+            button:hover {
+                background-color: #3ab78f;
+                color: whitesmoke;
+
+            }
+
+            .medsos-info {
+                margin-left: -20px;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    list-style: none;
+                    box-sizing: border-box;
+
+                    li {
+                        padding-left: 20px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .right-body {
+            width: 20%;
+            flex: 1;
+            padding-left: 40px;
+            box-sizing: border-box;
+
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
